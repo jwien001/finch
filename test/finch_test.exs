@@ -545,7 +545,6 @@ defmodule FinchTest do
                |> Finch.request(finch_name)
     end
     
-    
     test "raises exception on bad request", %{finch_name: finch_name} do
       start_supervised!({Finch, name: finch_name})
 
